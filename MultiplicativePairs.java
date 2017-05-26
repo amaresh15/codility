@@ -20,13 +20,13 @@ public class MultiplicativePairs {
 		Arrays.sort(C);
 
 		for (int i = 0; i < N; i++) {
+			if(C[i] <= 1)
+				break;
 			if (count >= 1_000_000_000)
 				return 1_000_000_000;
 
 			if (C[i] < 2) {
 				for (int j = i + 1; j < N; j++) {
-					if(C[i] <= 1)
-						break;
 					if (C[i] * C[j] >= C[i] + C[j]) {
 						count += (N - j);
 						break;
