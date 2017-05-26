@@ -57,3 +57,6 @@ For example, consider the following arrays A and B:
   
   Elements of input arrays can be modified.
   
+  
+Solution: MultiplicativePairs.java
+  
