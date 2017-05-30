@@ -21,7 +21,7 @@ public class MultiplicativePairs {
 
 		for (int i = 0; i < N; i++) {
 			if(C[i] <= 1)
-				break;
+				continue;
 			if (count >= 1_000_000_000)
 				return 1_000_000_000;
 
